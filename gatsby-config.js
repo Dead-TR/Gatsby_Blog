@@ -35,6 +35,6 @@ module.exports = {
         name: `markdown-pages`,
         path: `${__dirname}/src/`,
       },
-    },    
+    },
   ],
 }
