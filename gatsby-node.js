@@ -8,7 +8,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     node.internal.type === `MarkdownRemark` &&
     node.frontmatter.type === 'post'
     ) {
-    console.log(">>>>>>>node.frontmatter", node)
     const way = createFilePath({node, getNode, basePath: `content`});
 
     createNodeField({

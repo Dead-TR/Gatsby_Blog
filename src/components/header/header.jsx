@@ -1,12 +1,15 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {Button, Toolbar, AppBar} from '@material-ui/core';
+import {Link} from 'gatsby';
 
 import {SideMenu} from './sideMenu/sideMenu'
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    maxWidth: '1200px',
+    margin: '0 auto',
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -24,7 +27,9 @@ export const Header = () => {
       <AppBar position="static">
         <Toolbar>
           <SideMenu />
-          <Button color="inherit">Main</Button>
+          <Link to="/" style={{textDecoration: 'none', color: 'inherit'}}>
+            <Button color="inherit">Main</Button>
+          </Link>
         </Toolbar>
       </AppBar>
     </div>
