@@ -6,7 +6,7 @@
 
 module.exports = {
   /* Your site config here */
-  pathPrefix: "/gatsby-starter/", //Rename it to you repo name
+  pathPrefix: "/Gatsby_Blog/", //Rename it to you repo name
   siteMetadata: {
     title: `Gatsby Default Starter`,
     description: `Gatsby Default PRJ`,
