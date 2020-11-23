@@ -44,7 +44,6 @@ export default function Post({data}) {
   const styles = useStyles();
 
   const [isImageLoad, setIsLoadImage] = useState(false);
-  console.log("Post -> content", content)
 
   return (
     <Layout>

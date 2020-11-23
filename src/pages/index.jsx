@@ -6,9 +6,9 @@ import '../styles/general.css';
 export default function Home({data}) {
 
   return (
-    <Layout>
-      <GridListBox data={data} />
-    </Layout>
+      <Layout>
+        <GridListBox data={data} />
+      </Layout>
   )
 };
 
