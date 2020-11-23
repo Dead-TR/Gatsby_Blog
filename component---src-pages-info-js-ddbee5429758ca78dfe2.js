@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{szYE:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return c}));var u=e("q1tI"),r=e.n(u),a=e("L12J");function c(){return r.a.createElement(a.a,null,"Заготовка під інформаційну сторінку")}}}]);
+//# sourceMappingURL=component---src-pages-info-js-ddbee5429758ca78dfe2.js.map

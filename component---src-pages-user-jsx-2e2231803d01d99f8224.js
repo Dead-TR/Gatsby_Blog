@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{yt1F:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return o}));var u=e("q1tI"),r=e.n(u),c=e("L12J");function o(){return r.a.createElement(c.b,null,"Заготовка під сторінку користувача")}}}]);
+//# sourceMappingURL=component---src-pages-user-jsx-2e2231803d01d99f8224.js.map
