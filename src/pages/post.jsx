@@ -1,9 +1,9 @@
+import React, {useState, useEffect} from "react";
 import {Typography, Box, CircularProgress } from '@material-ui/core/';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 
 import { graphql } from "gatsby";
-import React, {useState} from "react";
 import {Layout} from "../components/layout";
 
 const useStyles = makeStyles({

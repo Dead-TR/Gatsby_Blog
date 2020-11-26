@@ -17,6 +17,9 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
+  head: {
+    background: '#00796b',
+  }
 }));
 
 export const Header = () => {
@@ -25,7 +28,7 @@ export const Header = () => {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar className={classes.head}>
           <SideMenu />
           <Link to="/" style={{textDecoration: 'none', color: 'inherit'}}>
             <Button color="inherit">Main</Button>

@@ -1,21 +1,27 @@
-import React, {useState} from 'react';
+import { Container, makeStyles } from '@material-ui/core';
+import React from 'react';
 import {Header} from './header/header';
 
-export const Context = React.createContext();
+const styleUse = makeStyles({
+  main: {
+    marginTop: '24px',
+    maxWidth: '1200px',
+  },
+})
 
 export function Layout({children}) {
-  const [user, setUser] = useState(null);
+  const styles = styleUse();
 
   return (
-    <Context.Provider value={[user, setUser]}>
-      <div>
-        <header>
-          <Header />
-        </header>
-        <main>
+    <div>
+      <header>
+        <Header />
+      </header>
+      <main>
+        <Container className={styles.main}>
           {children}
-        </main>
-      </div>
-    </Context.Provider>
+        </Container>
+      </main>
+    </div>
   );
 }

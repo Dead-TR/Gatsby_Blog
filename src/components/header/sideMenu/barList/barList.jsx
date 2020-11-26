@@ -25,36 +25,43 @@ export const BarList = ({toggleDrawer}) => {
 
   const links = [
     {
-      name: 'Home',
-      url: '/',
+      name: 'Chat',
+      url: '/chat',
     },
-    {
-      name: 'Info',
-      url: '/info',
-    },
+    // {
+    //   name: 'Info',
+    //   url: '/info',
+    // },
   ]
+
+  const show = false;
 
   return (
     <div
       className={styles.list}
       onClick={toggleDrawer(false)}
     >
-      <List>  {/* компонент самої менюшки */}
-        <Link
-          to={'/user'}
-          style={{textDecoration: 'none', color: 'inherit'}}
-        >
-          <ListItem button> {/* ітем менюшки */}
+      {
+        show? 
+          (<List>  {/* компонент самої менюшки */}
+            <Link
+              to={'/user'}
+              style={{textDecoration: 'none', color: 'inherit'}}
+            >
+              <ListItem button> {/* ітем менюшки */}
 
-            <ListItemIcon> {/* бокс для іконки ітема */}
-              <AccountCircleIcon color='secondary'/> {/* Власне, сама іконка */}
-            </ListItemIcon>
+                <ListItemIcon> {/* бокс для іконки ітема */}
+                  <AccountCircleIcon color='secondary'/> {/* Власне, сама іконка */}
+                </ListItemIcon>
 
-            <ListItemText primary={'Account'} /> {/* Текст ітема */}
+                <ListItemText primary={'Account'} /> {/* Текст ітема */}
 
-          </ListItem>
-        </Link>
-      </List>
+              </ListItem>
+            </Link>
+          </List>)
+          :
+          (<></>)
+      }
 
       <Divider /> {/* <hr> -- лінія */}
 
